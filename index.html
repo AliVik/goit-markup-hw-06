@@ -52,7 +52,7 @@
                               
             <section class="hero">
             <h1 class="hero-name">Эффективные решения<br> для вашего бизнеса</h1>
-            <button type="button" class="main-button" data-modal-open>Заказать услугу</button>
+            <button type="button" class="modal-button" data-modal-open>Заказать услугу</button>
             </section>
             
             <!-- Наши преимущества -->
@@ -370,6 +370,20 @@
                         </li>
                     </ul>
                </div>
+               <form class="sign-up">
+                   <label for="user-email" class="white-uppercase-text">Подпишитесь на рассылку</label>
+                   <div class="telegram-sign-up">
+                        <input type="email" name="user-email" id="user-email" placeholder="E-mail" class="sign-up-input" required>
+                        <button type="submit" class="sign-up-button" id="user-email">
+                            <span>Подписаться</span>
+                            <svg class="sign-up-icon">
+                                <use href="./images/icons.svg#icon-icon-send"></use>
+                            </svg>
+                        </button>
+                   </div>
+                    
+                </form>
+
             </div>
         </footer>
     
@@ -382,9 +396,47 @@
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
+            <form class="order-service">
+                <fieldset class="order-service-form">
+                    <legend class="form-legend-text">Оставьте свои данные, мы вам перезвоним</legend>
+                    <ul>
+                        <li class="list modal-list">
+                            <label for="user-name" class="label-text">Имя</label>
+                            <input type="text" name="user-name" id="user-name" class="modal-input"></input>
+                        </li>
+                        <li class="list modal-list">
+                            <label for="user-tel" class="label-text">Телефон</label>
+                            <input type="tel" name="user-tel" id="user-tel" class="modal-input">
+                        </li>
+                        <li class="list modal-list">
+                            <label for="user-mail" class="label-text">Почта</label>
+                            <input type="email" name="user-mail" id="user-mail" class="modal-input">
+                        </li>
+                        <li class="list modal-list">
+                            <label for="user-comment" class="label-text">Комментарий</label>
+                            <textarea name="" name="user-comment" id="user-comment" class="modal-input comment-area"></textarea>
+                        </li>
+                                       
+                    </ul>
+                    <div class="policy-checkbox">
+                        <input type="checkbox" name="policy" id="policy">
+                        <label for="policy" class="policy-text">Соглашаюсь с рассылкой и принимаю <a href="" class="policy-link">Условия
+                            договора</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="send-form-butt">Отправить</button>
+                    
+                    
+                    
+                    
+                    
+                    
+                </fieldset>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
+       
 </body>
 
 </html>

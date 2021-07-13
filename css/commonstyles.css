@@ -228,3 +228,45 @@ ul {
   background-color: var(--extra-color);
   fill: var(--main-white-color);
 }
+.sign-up {
+  margin-left: 93px;
+}
+.telegram-sign-up {
+  display: flex;
+  align-items: baseline;
+}
+.sign-up-input {
+  width: 358px;
+  height: 50px;
+  margin-top: 20px;
+  margin-right: 12px;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background-color: transparent;
+  color: var(--main-white-color);
+}
+.sign-up-button {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  padding-right: 28px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--main-white-color);
+  background-color: var(--extra-color);
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  text-align: center;
+}
+.sign-up-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}

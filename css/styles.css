@@ -465,6 +465,9 @@
 }
 
 .policy-text {
+  display: flex;
+  align-items: center;
+
   font-size: 14px;
   line-height: 1.7;
   color: var(--secondary-text-color);
@@ -472,9 +475,15 @@
 .policy-text::before {
   content: "";
   display: block;
+  margin-right: 8.38px;
   background-image: url(/images/vector.svg);
   width: 16px;
   height: 15px;
+  transition: background-image var(--time) var(--timing-function);
+}
+
+.checkbox:checked + .policy-text::before {
+  background-image: url(/images/icon-check.svg);
 }
 .policy-link {
   color: var(--extra-color);

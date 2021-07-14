@@ -457,6 +457,7 @@
 .modal-input:focus + .modal-list-icons {
   fill: var(--extra-color);
 }
+
 .comment-area {
   resize: none;
   height: 120px;
@@ -484,6 +485,10 @@
 
 .checkbox:checked + .policy-text::before {
   background-image: url(/images/icon-check.svg);
+}
+.checkbox:focus + .policy-text::before {
+  outline: 2px solid #000;
+  outline-offset: 1px;
 }
 .policy-link {
   color: var(--extra-color);

@@ -58,7 +58,7 @@
             <!-- Наши преимущества -->
             <section class=" section advantage-section">
             <div class="container">
-                <h2 class="main-headers hidden">Наши преимущества</h2>
+                <h2 class="main-headers visually-hidden">Наши преимущества</h2>
                 <ul class="flex-list">
                     <li class="list flex-item">
                         <div class="thumb">
@@ -393,17 +393,16 @@
         <div class="modal-window">
             <button type="button" class="modal-butt" data-modal-close>
                 <svg class="modal-icon">
-                    <use href="./images/icons.svg#icon-close"></use>
+                    <use href="./images/icons.svg#icon-close" class="modal-cross"></use>
                 </svg>
             </button>
             <form class="order-service">
-                <fieldset class="order-service-form">
-                    <legend class="form-legend-text">Оставьте свои данные, мы вам перезвоним</legend>
-                    <ul>
+                <ul>
+                        <p class="form-legend-text">Оставьте свои данные, мы вам перезвоним</p>
                         <li class="list modal-list">
                             <label for="user-name" class="label-text">Имя</label>
                             <div class="input-relative">
-                                <input type="text" name="user-name" id="user-name" class="modal-input"></input>
+                                <input type="text" name="user-name" id="user-name" class="modal-input" required></input>
                                 <svg class="modal-list-icons">
                                     <use href="./images/icons.svg#icon-person-black"></use>
                                 </svg>
@@ -413,7 +412,7 @@
                         <li class="list modal-list">
                             <label for="user-tel" class="label-text">Телефон</label>
                             <div class="input-relative">
-                                <input type="tel" name="user-tel" id="user-tel" class="modal-input">
+                                <input type="tel" name="user-tel" id="user-tel" class="modal-input" required>
                                 <svg class="modal-list-icons">
                                     <use href="./images/icons.svg#icon-phone-black"></use>
                                 </svg>
@@ -423,7 +422,7 @@
                         <li class="list modal-list">
                             <label for="user-mail" class="label-text">Почта</label>
                             <div class="input-relative">
-                                <input type="email" name="user-mail" id="user-mail" class="modal-input">
+                                <input type="email" name="user-mail" id="user-mail" class="modal-input" required>
                                 <svg class="modal-list-icons">
                                     <use href="./images/icons.svg#icon-email-black"></use>
                                 </svg>
@@ -437,20 +436,14 @@
                                        
                     </ul>
                     <div class="policy-checkbox">
-                        <input type="checkbox" name="policy" id="policy">
+                        <input type="checkbox" name="policy" id="policy" required class="checkbox">
                         <label for="policy" class="policy-text">Соглашаюсь с рассылкой и принимаю <a href="" class="policy-link">Условия
                             договора</a>
                         </label>
                     </div>
                     <button type="submit" class="send-form-butt">Отправить</button>
-                    
-                    
-                    
-                    
-                    
-                    
-                </fieldset>
-            </form>
+                                     
+           </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>

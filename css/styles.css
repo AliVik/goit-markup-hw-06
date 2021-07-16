@@ -488,6 +488,8 @@
 }
 .checkbox:focus:not(:checked) + .policy-text::before {
   outline: 2px solid #000;
+  outline-offset: 5px;
+  outline-style: groove;
 }
 .policy-link {
   color: var(--extra-color);

@@ -486,9 +486,8 @@
 .checkbox:checked + .policy-text::before {
   background-image: url(../images/icon-check.svg);
 }
-.checkbox:focus + .policy-text::before {
+.checkbox:focus:not(:checked) + .policy-text::before {
   outline: 2px solid #000;
-  outline-offset: 5px;
 }
 .policy-link {
   color: var(--extra-color);
